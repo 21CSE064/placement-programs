@@ -1,0 +1,36 @@
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+int main()
+{
+	char arr[100];
+	//gets(arr);
+	//strlen(arr);
+	int n=5;
+	for(int i=1;i<=n;i++)
+	{
+		for(int j=n;j>=1;j--)
+		{
+			if(j>i)
+			{
+				printf("  ");
+			}
+			else
+			{
+				printf("+ ");
+			}
+		}
+		for(int a=1;a<i;a++)
+		{
+			printf("+ ");
+		}
+		printf("\n");
+	}
+}
+
+output:
+        +
+      + + +
+    + + + + +
+  + + + + + + +
++ + + + + + + + +

@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+	int q,s=0,n1;
+    int n;
+    printf("enter  n");
+    scanf("%d", &n);
+    while(n!=0)
+    {
+    s=s+(n%10);
+    n=n/10;
+    }
+    printf("%d",s);
+    return 0;
+}
+
+output:
+enter  n114
+6

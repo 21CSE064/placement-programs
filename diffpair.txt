@@ -1,0 +1,40 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+	int n,d,p=0;
+	printf("enter n:\n");
+	scanf("%d",&n);
+	printf("enter diffrence:\n");
+	scanf("%d",&d);
+	int arr[n];
+	for(int a=0;a<n;a++)
+	{
+	     scanf("%d",&arr[a]);
+    }
+	for(int i=0;i<n;i++)
+	{
+		for(int j=i+1;j<n;j++)
+		{
+			if(arr[i]-arr[j]==d || arr[i]-arr[j]==-d)
+			{
+				p=p+1;
+			}
+		}
+	}
+	printf("the no.of pairs are : %d",p);
+}
+
+output:
+enter n:
+7
+enter diffrence:
+2
+4
+6
+8
+1
+3
+7
+9
+the no.of pairs are : 4
